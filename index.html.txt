@@ -3,40 +3,64 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Car Service Booking</title>
+  <title>Book Service - AutoCare</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <h1>AutoCare Service Centre</h1>
-    <p>Book your car service in minutes</p>
+    <div class="header-content">
+      <div>
+        <h1>🚗 AutoCare Service Centre</h1>
+        <p>Book your car service in minutes</p>
+      </div>
+      <div class="user-info">
+        <span id="user-email"></span>
+        <button class="btn-logout" onclick="handleLogout()">Logout</button>
+      </div>
+    </div>
   </header>
+  
   <main>
-    <h2>Book a Service</h2>
-    <div class="form-group">
-      <label>Your Name:</label>
-      <input type="text" id="name" placeholder="John Smith">
+    <div class="booking-card">
+      <h2>Book a Service</h2>
+      
+      <div class="form-group">
+        <label>Your Name</label>
+        <input type="text" id="name" placeholder="John Smith">
+      </div>
+      
+      <div class="form-group">
+        <label>Car Number Plate</label>
+        <input type="text" id="plate" placeholder="AB12 CDE">
+      </div>
+      
+      <div class="form-group">
+        <label>Service Type</label>
+        <select id="service">
+          <option>Oil Change - £45</option>
+          <option>Full Service - £120</option>
+          <option>Tyre Replacement - £200</option>
+          <option>Brake Check - £65</option>
+          <option>MOT Test - £54.85</option>
+        </select>
+      </div>
+      
+      <div class="form-group">
+        <label>Preferred Date</label>
+        <input type="date" id="date">
+      </div>
+      
+      <div class="form-group">
+        <label>Additional Notes (Optional)</label>
+        <textarea id="notes" placeholder="Any special requirements?" rows="3"></textarea>
+      </div>
+      
+      <button class="btn-primary" onclick="submitBooking()">Confirm Booking</button>
+      
+      <div id="confirmation" class="confirmation-message"></div>
     </div>
-    <div class="form-group">
-      <label>Car Number Plate:</label>
-      <input type="text" id="plate" placeholder="AB12 CDE">
-    </div>
-    <div class="form-group">
-      <label>Service Type:</label>
-      <select id="service">
-        <option>Oil Change</option>
-        <option>Full Service</option>
-        <option>Tyre Replacement</option>
-        <option>Brake Check</option>
-      </select>
-    </div>
-    <div class="form-group">
-      <label>Preferred Date:</label>
-      <input type="date" id="date">
-    </div>
-    <button onclick="submitBooking()">Book Now</button>
-    <div id="confirmation"></div>
   </main>
+  
   <script src="script.js"></script>
 </body>
 </html>
