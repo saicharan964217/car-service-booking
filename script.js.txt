@@ -1,0 +1,16 @@
+function submitBooking() {
+  var name    = document.getElementById('name').value;
+  var plate   = document.getElementById('plate').value;
+  var service = document.getElementById('service').value;
+  var date    = document.getElementById('date').value;
+  if (!name || !plate || !date) {
+    alert('Please fill in all fields!');
+    return;
+  }
+  var msg = 'Booking Confirmed! \n' +
+    'Name: ' + name + '\n' +
+    'Car Plate: ' + plate + '\n' +
+    'Service: ' + service + '\n' +
+    'Date: ' + date;
+  document.getElementById('confirmation').innerText = msg;
+}

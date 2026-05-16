@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Car Service Booking</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>AutoCare Service Centre</h1>
+    <p>Book your car service in minutes</p>
+  </header>
+  <main>
+    <h2>Book a Service</h2>
+    <div class="form-group">
+      <label>Your Name:</label>
+      <input type="text" id="name" placeholder="John Smith">
+    </div>
+    <div class="form-group">
+      <label>Car Number Plate:</label>
+      <input type="text" id="plate" placeholder="AB12 CDE">
+    </div>
+    <div class="form-group">
+      <label>Service Type:</label>
+      <select id="service">
+        <option>Oil Change</option>
+        <option>Full Service</option>
+        <option>Tyre Replacement</option>
+        <option>Brake Check</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label>Preferred Date:</label>
+      <input type="date" id="date">
+    </div>
+    <button onclick="submitBooking()">Book Now</button>
+    <div id="confirmation"></div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
