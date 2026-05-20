@@ -3,37 +3,79 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login - AutoCare Service Centre</title>
+  <title>Login - SaiCharan AutoCare</title>
+
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body class="login-page">
+
   <div class="login-container">
+
     <div class="login-box">
+
       <div class="logo">🚗 AutoCare</div>
+
       <h1>Welcome Back</h1>
-      <p class="subtitle">Please login to book your service</p>
-      
+
+      <p class="subtitle">
+        Please login to book your service
+      </p>
+
       <div id="login-error" class="error-message"></div>
-      
+
       <div class="form-group">
         <label>Email Address</label>
-        <input type="email" id="email" placeholder="your@email.com" autocomplete="email">
+
+        <input 
+          type="email"
+          id="email"
+          placeholder="your@email.com"
+          autocomplete="email"
+        >
       </div>
-      
+
       <div class="form-group">
         <label>Password</label>
-        <input type="password" id="password" placeholder="Enter your password" autocomplete="current-password">
+
+        <input 
+          type="password"
+          id="password"
+          placeholder="Enter your password"
+          autocomplete="current-password"
+        >
       </div>
-      
-      <button class="btn-primary" onclick="handleLogin()">Login</button>
-      
+
+      <!-- LOGIN BUTTON -->
+      <button class="btn-primary" onclick="handleLogin()">
+        Login
+      </button>
+
+      <br><br>
+
+      <!-- SIGNUP BUTTON -->
+      <button 
+        class="btn-primary signup-btn"
+        onclick="window.location.href='signup.html'"
+      >
+        Create Account
+      </button>
+
       <div class="demo-credentials">
+
         <p><strong>Demo Credentials:</strong></p>
-        <p>Email: demo@autocare.com</p>
-        <p>Password: demo123</p>
+
+        <p>Email: saicharan@autocare.com</p>
+
+        <p>Password: saicharan123</p>
+
       </div>
+
     </div>
+
   </div>
+
   <script src="script.js"></script>
+
 </body>
 </html>

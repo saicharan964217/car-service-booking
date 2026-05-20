@@ -282,3 +282,25 @@ header {
       padding: 30px 20px;
     }
   }
+  .service-info {
+    margin-top: 30px;
+    padding: 20px;
+    background: #f5f7ff;
+    border-radius: 10px;
+    border-left: 5px solid #1565C0;
+  }
+  
+  .service-info h3 {
+    color: #1565C0;
+    margin-bottom: 15px;
+  }
+  
+  .service-info p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+    color: #333;
+  }
+  .signup-btn {
+    margin-top: 15px;
+    background: #4CAF50;
+  }

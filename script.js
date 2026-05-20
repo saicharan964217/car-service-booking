@@ -4,7 +4,7 @@
 
 // Demo user database
 const validUsers = [
-    { email: 'demo@autocare.com', password: 'demo123', name: 'Demo User' },
+    { email: 'saicharan@autocare.com', password: 'saicharan123', name: 'saicharan' },
     { email: 'admin@autocare.com', password: 'admin123', name: 'Admin User' },
     { email: 'test@test.com', password: 'test123', name: 'Test User' }
   ];
@@ -178,4 +178,19 @@ function generateBookingReference() {
     setTimeout(() => {
       confirmDiv.classList.remove('show');
     }, 30000);
+  }
+  function handleSignup() {
+
+    const name = document.getElementById('signup-name').value;
+    const email = document.getElementById('signup-email').value;
+    const password = document.getElementById('signup-password').value;
+  
+    if (!name || !email || !password) {
+      alert('Please fill all fields');
+      return;
+    }
+  
+    alert('Account created successfully!');
+  
+    window.location.href = 'login.html';
   }
